@@ -57,6 +57,7 @@ env = CustomMetaDriveEnv(
 # print(dir(env))
 env.reset()
 for i in range(4):
-    things = env.step([0,0])
-    for r in things:
-        print(r)
+    observation, reward, terminated, truncated, info = env.step([0,0])
+
+    print(observation)
+

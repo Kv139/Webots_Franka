@@ -69,10 +69,13 @@ class CustomMetaDriveSimulation(MetaDriveSimulation):
         real_time,scenic_offset,sumo_map_boundary,film_size,**kwargs,)
         
 
-        def get_obs(self):
-            return 0
-        
-        def get_reward(self):
-            return self.scene.objects[0].reward
+    def get_obs(self):
+        return [0,0,0,0,0]
     
+    def get_reward(self):
+        return self.scene.objects[0].reward
+    
+    def get_info(self):
+        return {}
+
 
