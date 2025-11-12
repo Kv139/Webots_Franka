@@ -1,2 +1,5 @@
 # ignore ACC controllers from previous work
 Metadrive/Scenarios/controllers
+
+# run data
+Metadrive/runs
