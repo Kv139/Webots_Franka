@@ -1,5 +1,14 @@
 model scenic.simulators.webots.model
 
+"""
+Here we can define objects to be included in the Scenic program. Objects should 
+inherit from the WebotsObject class. Custom meshes can be used for this as well
+as base shapes from Scenic as shown above. 
+
+Read here for a complete list of the WebotsObject attributes:
+https://docs.scenic-lang.org/en/latest/modules/scenic.simulators.webots.model.html#module-scenic.simulators.webots.model
+"""
+
 class Floor(Object):
     width: 2
     length: 2
